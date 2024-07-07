@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+ 
+</head>
+<body>
+  <a href="/">Home</a>
+    <h1>{{ gebiet }}</h1>
+    <table style="width: 50%;">
+        <tr>
+          <th>MichNr</th>
+          <th>**</th>
+          <th>*</th>
+          <th>o</th>
+        </tr>
+        {% for stamp in stamps %}
+        <tr>
+            <td>{{ stamp.MichNr }}</td>
+            <td>{{ stamp.pf }}</td>
+            <td>{{ stamp.ug }}</td>
+            <td>{{ stamp.ge }}</td>
+          </tr>
+        {% endfor %}
+       
+    
+      </table>
+
+
+
+ 
+    
+</body>
+</html>
