@@ -19,4 +19,13 @@ def usa():
 
 @app.route("/ziffern_spezial")
 def ziffern_spezial():
-    return "Hello, Ziffern!"
+    marken = {
+           "Farben" : [
+            {"MichNr" : 911,
+             "Variante" : "a"}
+        ]
+
+    }
+     
+    
+    return render_template("spezial.html", marken = marken)

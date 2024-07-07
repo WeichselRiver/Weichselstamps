@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
-
-    <h1>USA</h1>
+    {% for variante, mn in marken.items() %}
+    <h2>{{ variante }}</h2>
     <table style="width: 50%;">
         <tr>
-          <th>MichNr</th>
-          <th>**</th>
-          <th>*</th>
-          <th>o</th>
+            <th>MichNr</th>
+            <th>Variante</th>
+            <th>**</th>
+            <th>*</th>
+            <th>o</th>
         </tr>
-        {% for stamp in stamps %}
+        {% for stamp in mn %}
         <tr>
             <td>{{ stamp.MichNr }}</td>
+            <td>{{ stamp.Variante }}</td>
             <td class="besitz">{{ stamp.pf }}</td>
             <td class="besitz">{{ stamp.ug }}</td>
             <td class="besitz">{{ stamp.ge }}</td>
@@ -20,7 +22,6 @@
        
     
       </table>
-{% endblock %}
-
-
- 
+    {% endfor %}
+    {% endblock %}
+    

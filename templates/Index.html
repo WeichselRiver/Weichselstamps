@@ -8,18 +8,12 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
   </head>
   <body>
+    <h1>Carla und Freddie sagen Hallo!</h1>
+    <img src="{{ url_for('static',filename='bilder/carla_und_freddie.jpg') }}" alt="Carla">
     <h1><a href="/usa">USA</a></h1>
-    <details>
-      <summary>Bund</summary>
-      <div>
-          <details>
-            <p>Allg Bes.</p>
-          <summary>Allg Bes.</summary>
-          <div>
-            <a href="/ziffern_spezial">Ziffern Spezial</a>
-          </div>
-        </details>
-      </div>
-    </details>
+    <h1>Deutschland nach 1945</h1>
+    <h2>Allierte Besetzung - Gemeinschaftsausgaben</h2>
+    <h3><a href="/ziffern_spezial">Ziffern Spezial</a></h3>
+  
   </body>
 </html>
