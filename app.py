@@ -9,13 +9,13 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route("/<gebiet>")
-def usa(gebiet):
-    with open(f"./static/data/{gebiet}.json", "r") as f:
+@app.route("/usa")
+def usa():
+    with open(f"./static/data/usa.json", "r") as f:
         stamps = json.load(f)
 
    
-    return render_template("std.html", gebiet=gebiet.upper(), stamps=stamps)
+    return render_template("std.html", stamps=stamps)
 
 @app.route("/ziffern_spezial")
 def ziffern_spezial():
