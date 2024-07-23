@@ -12,7 +12,10 @@
         </tr>
         {% for stamp in mn %}
         <tr>
-            <td>{{ stamp.MichNr }}</td>
+          {% if loop.first %}
+          <td rowspan="2">{{ stamp.MichNr }}</td>
+          
+          {% endif %}
             <td>{{ stamp.Variante }}</td>
             <td class="besitz">{{ stamp.pf }}</td>
             <td class="besitz">{{ stamp.ug }}</td>

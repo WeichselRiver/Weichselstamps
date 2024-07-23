@@ -13,19 +13,10 @@ def hello():
 def usa():
     with open(f"./static/data/usa.json", "r") as f:
         stamps = json.load(f)
-
-   
-    return render_template("std.html", stamps=stamps)
+    return render_template("std.html", stamps=stamps, gebiet="USA")
 
 @app.route("/ziffern_spezial")
 def ziffern_spezial():
-    marken = {
-           "Farben" : [
-            {"MichNr" : 911,
-             "Variante" : "a"}
-        ]
-
-    }
-     
-    
-    return render_template("spezial.html", marken = marken)
+    with open(f"./static/data/ziffern.json", "r") as f:
+        marken = json.load(f)
+    return render_template("spezial.html", marken = marken, gebiet="I. Kontrollratsausgabe - Ziffernserie")

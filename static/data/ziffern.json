@@ -1,0 +1,81 @@
+{
+     "Farben": [
+          {
+               "MichNr": 912,
+               "Variante": "a"
+          },
+          {
+               "MichNr": 912,
+               "Variante": "b"
+          }
+     ],
+     "Plattenoberrand": [
+          {
+               "MichNr": 911,
+               "Variante": "dgz",
+               "pf": 2
+          },
+          {
+               "MichNr": 911,
+               "Variante": "ndgz",
+               "pf": 2
+          }
+     ],
+     "HAN": [
+          {
+               "MichNr": 911,
+               "Variante": "434.45",
+               "pf": 1
+          },
+          {
+               "MichNr": 911,
+               "Variante": "434.45-1",
+               "pf": 0
+          },
+          {
+               "MichNr": 911,
+               "Variante": "434.45-2",
+               "pf": 1
+          },
+          {
+               "MichNr": 911,
+               "Variante": "1202.45-1",
+               "pf": 1
+          },
+          {
+               "MichNr": 911,
+               "Variante": "1202.45-2",
+               "pf": 1
+          },
+          {
+               "MichNr": 911,
+               "Variante": "4001.46-1",
+               "pf": 0
+          },
+          {
+               "MichNr": 911,
+               "Variante": "4001.46-2",
+               "pf": 1
+          },
+          {
+               "MichNr": 912,
+               "Variante": "4014.46-1",
+               "pf": 1
+          },
+          {
+               "MichNr": 912,
+               "Variante": "4014.46-2",
+               "pf": 1
+          },
+          {
+               "MichNr": 912,
+               "Variante": "4040.46-1",
+               "pf": 0
+          },
+          {
+               "MichNr": 912,
+               "Variante": "4040.46-2",
+               "pf": 1
+          }
+     ]
+}

@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <h1>USA</h1>
+ 
     <table style="width: 50%;">
         <tr>
           <th>MichNr</th>
+          <th>Variante</th>
           <th>**</th>
           <th>*</th>
           <th>o</th>
@@ -12,6 +13,7 @@
         {% for stamp in stamps %}
         <tr>
             <td>{{ stamp.MichNr }}</td>
+            <td>{{ stamp.Variante }}</td>
             <td class="besitz">{{ stamp.pf }}</td>
             <td class="besitz">{{ stamp.ug }}</td>
             <td class="besitz">{{ stamp.ge }}</td>
